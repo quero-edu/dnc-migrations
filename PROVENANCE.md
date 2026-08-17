@@ -5,9 +5,7 @@ Montado pela fase 10 de `api/scripts/dnc-migration/` — **não editar à mão**
 reconstrói a árvore do zero.
 
 O histórico de cada origem não veio junto (clone raso). O commit registrado abaixo é a
-referência exata do que foi copiado.
-
-Gerado em 2026-08-17T12:34:14.301Z.
+referência exata do que foi copiado; a data de cada espelho está no `git log` deste repositório.
 
 | Origem | Branch | Pasta | Commit |
 |---|---|---|---|
