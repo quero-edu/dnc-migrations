@@ -7,7 +7,7 @@ reconstrói a árvore do zero.
 O histórico de cada origem não veio junto (clone raso). O commit registrado abaixo é a
 referência exata do que foi copiado.
 
-Gerado em 2026-08-17T12:30:36.230Z.
+Gerado em 2026-08-17T12:34:14.301Z.
 
 | Origem | Branch | Pasta | Commit |
 |---|---|---|---|
