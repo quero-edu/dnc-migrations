@@ -1,0 +1,66 @@
+// Escreva um algoritmo que leia uma medida em metros e converta para centímetros.
+
+programa {
+  funcao inicio() {
+    real medidaMetros
+    real medidaCentimentros
+
+    leia(medidaMetros)
+
+    medidaCentimentros = medidaMetros * 100
+
+    escreva(medidaCentimentros)
+    
+  }
+}
+
+// Desenvolva um algoritmo que receba o valor de um 
+// depósito em poupança, calcule e mostre o valor após 
+// um mês de aplicação na poupança, sabendo que a poupança rende 5% ao mês.
+
+programa {
+  funcao inicio() {
+    real deposito = 0
+
+    leia(deposito)
+
+    real rendimento = 0.05 * deposito
+
+    real primeiroMes = rendimento + deposito
+
+    escreva(primeiroMes)
+
+  }
+}
+
+
+// E se houvesse uma terceira opção?
+
+// E se o aluno tirasse uma nota menor que 6, mas
+// maior ou igual a 4, ele ficasse de recuperação?
+
+// Como você calcularia?
+
+programa {
+  funcao inicio() {
+    real nota1 =10
+    real nota2 = 5
+    real nota3 = 3
+
+    real media = (nota1 + nota2 + nota3)/3
+
+    escreva(media)
+    escreva("\n")
+
+    // a < 6 < b 
+    se (media >= 6 ) {
+      escreva("Aprovado")
+    } senao se (media <6 e media >=4){
+      escreva("Recuperação")
+    } senao {
+      escreva("Reprovado")
+    }
+
+    
+  }
+}

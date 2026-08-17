@@ -1,0 +1,62 @@
+// Implementando uma pilha estática
+
+programa {
+  const inteiro TAM = 10
+  inteiro pilha[TAM] // 0, 1 , 2 .. 9
+  inteiro topo // vai ser o índice do meu topo
+
+  funcao inicializa(){
+    topo = -1 // Antes do zero. 
+  }
+  funcao inteiro verificaCheia() {
+    se (topo == TAM-1) {
+      retorne 1
+    } senao {
+      retorne 0
+    }
+  }
+  funcao verificaVazia() {
+    se (topo == -1) {
+      retorne 1
+    } senao {
+      retorne 0
+    }
+  }
+  
+  funcao empilha() {
+    inteiro valor = 0
+    inteiro pilhaCheia = verificaCheia()
+
+    se (pilhaCheia == 0){
+      escreva("Digite o valor:")
+      leia(valor)
+      topo++
+      pilha[topo] = valor
+    } senao {
+      escreva("Pilha cheia\n")
+    }
+  }
+  funcao desempilha() {
+    inteiro pilhaVazia = verificaVazia()
+    se (pilhaVazia == 1){
+      escreva( "Pilha Vazia\n")
+    } senao{
+      topo--
+    }
+
+  }
+  funcao imprimir() {
+    escreva("\n ------ PILHA ------ \n")
+    para (inteiro cont = 0; cont <= topo; cont++){
+      escreva(" ", pilha[cont])
+    }
+  }
+
+  funcao inicio() {
+    inicializa()
+    empilha()
+    desempilha()
+    desempilha()
+    imprimir()
+  }
+}

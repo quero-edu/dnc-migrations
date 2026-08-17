@@ -1,0 +1,64 @@
+// Elabore um algoritmo que leia uma lista de 10 valores numéricos inteiros quaisquer. 
+// Feito isso, escreva na tela o maior e menor valor informado.
+programa {
+  funcao inicio() {
+    inteiro num[10]  // 0,1,2,3...,8,9.
+    inteiro x
+    inteiro maior = 0
+    inteiro menor = 0
+
+    escreva("Digite os 10 valores: \n")
+
+    para(x = 0; x<10 ; x++){
+      leia(num[x]) 
+
+      se (num[x] > maior){
+        maior = num[x]
+      }
+      se (num[x] < menor){
+        menor = num[x]
+      }
+    }
+
+    escreva("O maior valor digitado é: ", maior)
+    escreva("\nO menor valor digitado é: ", menor)
+
+    para(x = 0; x<10 ; x++){
+      escreva("indice:", x, "- valor",num[x])
+      escreva("\n")
+    }
+    
+  }
+}
+
+// Sabendo-se que a média de aprovação em uma disciplina é 6, escreva um algoritmo que leia uma 
+// lista de 10 médias de alunos. Logo a seguir, apresente na tela a quantidade de alunos que obtiveram 
+// aprovação e a quantidade de alunos que ficaram em recuperação na disciplina.
+
+programa {
+    funcao inicio() {
+      real media[10]
+      inteiro x
+      inteiro aprovado = 0
+      inteiro reprovado = 0
+  
+      para( x = 0 ; x < 10 ; x++){
+        escreva("\n\n Digite a média so aluno de numero ", x+1,":")
+        leia(media[x])
+        // se a media for maior que 6 -> mais um aprovado 
+        // se a media for menor que 6 -> mais um reprovado
+  
+        se(media[x] >= 6) {
+          aprovado++
+        } senao {
+          reprovado++
+        }
+      }
+  
+      escreva("\n\n Qtd aprovados: ", aprovado)
+      escreva("\n\n Qtd reprovados: ", reprovado)
+  
+      
+    }
+  }
+  

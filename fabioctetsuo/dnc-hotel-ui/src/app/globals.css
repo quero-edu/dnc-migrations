@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font variables */
+  --black-color: #000000;
+  --default-font-size: 16px;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  color: var(--black-color);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--default-font-size);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

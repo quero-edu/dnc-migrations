@@ -1,0 +1,41 @@
+// Escreva um algoritmo que leia dez valores numéricos inteiros e apresente na tela o somatório dos valores.
+
+programa {
+  funcao inicio() {
+    inteiro valor = 0
+    inteiro soma = 0 
+    inteiro cont = 0
+
+    para (cont = 1; cont <=10; cont++){
+      leia(valor)
+      soma = soma + valor
+
+      escreva("cont: ", cont, " valor: " ,valor, " soma: ", soma, "\n" )
+    }
+
+    escreva(soma)
+    
+  }
+}
+
+// Construa um algoritmo que calcule e imprima quantos anos serão necessários para que Zé seja maior que Chico.
+// Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 3 centímetros por ano. 
+programa {
+  funcao inicio() {
+    real chico = 1.5
+    real ze = 1.1
+
+    inteiro anos = 0
+
+    //quantos anos para ze ficar maior que chico 
+
+    enquanto (ze < chico) {
+      chico += + 0.02
+
+      ze = ze + 0.03 
+
+      anos++
+    }
+    escreva(anos)
+  }
+}
